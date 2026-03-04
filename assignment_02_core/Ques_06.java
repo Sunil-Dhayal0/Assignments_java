@@ -1,5 +1,4 @@
 import java.lang.Boolean;
-
 public class Ques_06 {
    public static void main(String[] args) {
   
