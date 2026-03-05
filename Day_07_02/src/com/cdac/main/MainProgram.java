@@ -12,6 +12,7 @@ public class MainProgram {
 		   Scanner sc = new Scanner(System.in); 
 		   
 		  do {
+			  
 			 
 			  System.out.println("===============Product management system ======================");
 			  System.out.println("Enter 1 for add    product details \t");
@@ -21,27 +22,42 @@ public class MainProgram {
 			  System.out.println("Enter 5 for SortByname product details \t");
 			  System.out.println("Enter 6 for SortByPrice product details \t");
 			  System.out.println("Enter 7 for exit ");
+			  
+			   choice = sc.nextInt();
+			   
+			   
+			   switch(choice) {
+		        
+			     case 1:
+			    	   PM.AddProduct();
+			    	   break;
+			     case 2:
+			    	   PM.ViewProduct();
+			    	   break;
+			     case 3:
+			    	  PM.DeleteProduct();
+			    	  break;
+			     case 4:
+			    	 PM.UpdateProduct();
+			    	 break;
+			     case 5:
+			    	 PM.SortByName();
+			    	 break;
+			     case 6:
+			    	 PM.SortByPrice();
+			    	 break;
+			     default:
+			    	 System.out.println("you entered out of range number");
+			    	 break;
+			     
+			     }
+			   
+			   
+			   
 			    
-		  }while(choice != 7)
+		  }while(choice != 7);
 		  
-	     switch(choice) {
-	        
-	     case 1:
-	    	   PM.AddProduct();
-	     case 2:
-	    	   PM.ViewProduct();
-	     case 3:
-	    	  PM.DeleteProduct();
-	     case 4:
-	    	 PM.UpdateProduct();
-	     case 5:
-	    	 PM.SortByName();
-	     case 6:
-	    	 PM.SortByPrice();
-	     default:
-	    	 System.out.println("you entered out of range number");
-	     
-	     }
+	  
 		  
 	}
 	

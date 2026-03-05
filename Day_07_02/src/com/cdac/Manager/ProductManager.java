@@ -7,18 +7,21 @@ public class ProductManager {
   
 	ArrayList<Product> plist = new ArrayList<Product>();
 	
-//	 private int Product_Id;
-//	 private int Price;
-//	 private String colour;
-//	 private String Category;
+	
+//	 private int    Product_Id;
+//	 private String Product_Name;
+//	 private int    Product_Price;
+//	 private String Product_Colour;
+//	 private String Product_Category;
 	
 	public ProductManager(){
-		 plist.add(new Product(1001,2000,"Black","Keyboard"));
-		 plist.add(new Product(1002,3200,"White","Mouse"));
-		 plist.add(new Product(1003,2300,"Black","CPU"));
-		 plist.add(new Product(1003,2300,"White","Charger"));
-		 plist.add(new Product(1003,2300,"Black","LED"));
-		 plist.add(new Product(1003,2300,"White","Paper"));
+		 plist.add(new Product(101,"Laptop",52000,"Black","Electronics"));
+		 plist.add(new Product(102,"Shirt",2200,"Red","cloths"));
+		 plist.add(new Product(103,"Keyboard",1300,"black","electronics"));
+		 
+//		 plist.add(new Product(1003,2300,"White","Charger"));
+//		 plist.add(new Product(1003,2300,"Black","LED"));
+//		 plist.add(new Product(1003,2300,"White","Paper"));
 		 
 	}
 	
@@ -43,13 +46,15 @@ public class ProductManager {
 	
 	public void ViewProduct() {
 		
+		 
+		
 		plist.stream().forEach(p->System.out.println(p));
 		
 	}
 	
 	public void DeleteProduct() {
 		  
-			plist.stream().forEach(null);
+
 				   
 	}
 	
@@ -62,7 +67,7 @@ public class ProductManager {
 		  id = sc.nextInt();
 		   for(Product p:plist ) {
 			   
-			   if(p.get == id ) {
+			   if(plist.get== id ) {
 				    flage = true;
 				  System.out.println("enter product price \t");  
 				    p.Price =  sc.nextInt();
@@ -76,7 +81,8 @@ public class ProductManager {
 	}
 	
 	public void SortByName() {
-		
+		  
+		 plist.stream().sorted(p.Category)
 		
 	}
 	
