@@ -4,7 +4,7 @@ public class person {
 	
          private int age;
          private String name;
-         public static int count;
+         public int count;
          
          public void setAge(int age , String name) {
         	 
